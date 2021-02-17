@@ -28,7 +28,7 @@ namespace MVCwithLogin1.Controllers
         // GET: People
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Person.ToListAsync());
+            return View(await _context.Person.AsNoTracking().ToListAsync());
         }
 
         // GET: People/Details/5

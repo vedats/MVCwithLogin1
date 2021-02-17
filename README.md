@@ -1,3 +1,3 @@
-MVC With Login ,
+MVC With Login ,  .net 5.0
 Identity Database ,
 Personel Database

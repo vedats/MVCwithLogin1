@@ -1,15 +1,21 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MVC with Login 1</title>
+    <title>Gelisim – Web Tabanlı Fatura ve Tahsilat Yönetimi</title>
+    <meta content='Web Tabanlı Yönetimi' name='description'>
+    <meta content='Gelisim Bilgisayar yazılım ve donatım ltd' name='author'>
+    <meta name="developers" content="www.gelisim.net/Vedat Sebzeci" />
+    <meta name="revisit " content="14 days" />
+    <meta name="robots" content="All" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-success border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MVCwithLogin1</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -24,7 +30,6 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="People" asp-action="Index">Personel</a>
                         </li>
-                      
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -36,7 +41,6 @@
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2021 - MVCwithLogin1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
