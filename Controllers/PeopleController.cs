@@ -160,13 +160,12 @@ namespace MVCwithLogin1.Controllers
             var imagePath = Path.Combine(_hostEnvironment.WebRootPath, "images", person.Photo);
             if (System.IO.File.Exists(imagePath))
                 System.IO.File.Delete(imagePath);
+
             //delete the record
-         
             _context.Person.Remove(person);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
        
         private bool PersonExists(int id)
         {
